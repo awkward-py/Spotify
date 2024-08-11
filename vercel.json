@@ -1,0 +1,8 @@
+{
+  "projects": [
+    {
+      "name": "spotify-frontend",
+      "rootDirectory": "spotify"
+    }
+  ]
+}
