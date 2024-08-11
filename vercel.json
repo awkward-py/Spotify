@@ -1,8 +1,15 @@
 {
-  "projects": [
+  "version": 2,
+  "builds": [
     {
-      "name": "spotify-frontend",
-      "rootDirectory": "spotify"
+      "src": "spotify/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "spotify/$1"
     }
   ]
 }
