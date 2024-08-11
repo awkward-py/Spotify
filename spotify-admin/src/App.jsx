@@ -10,7 +10,7 @@ import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 
 
-export const url = 'http://localhost:4000 || https://spotify-three-sable.vercel.app/'
+export const url = 'https://spotify-admin-one.vercel.app/'
 
 const App = () => {
   return (
