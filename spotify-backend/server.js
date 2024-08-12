@@ -30,7 +30,6 @@
 
 // app.listen(port,()=>console.log(server started on ${port}))
 
-
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
@@ -47,7 +46,10 @@ connectCloudinary();
 
 // Configure CORS
 app.use(cors({
-  origin: 'https://spotify-frontend-yegh.onrender.com', // Replace with your frontend domain
+  origin: [
+    'https://spotify-frontend-yegh.onrender.com',
+    'https://spotify-admin-q2ub.onrender.com'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
